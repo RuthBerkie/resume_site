@@ -178,9 +178,24 @@
   }
 </script>
 
- <script src="https://jquery.com"></script>
- <script src="https://jsdelivr.net"></script>
- <script src="https://bootstrapcdn.com"></script>
+     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggleButton = document.querySelector(".navbar-toggler");
+            const menuCollapse = document.getElementById("navbarNavDropdown");
+
+            if (toggleButton && menuCollapse) {
+                toggleButton.addEventListener("click", function () {
+                    // Check if the menu is currently hidden or shown, and toggle it manually
+                    if (menuCollapse.classList.contains("show")) {
+                        menuCollapse.classList.remove("show");
+                    } else {
+                        menuCollapse.classList.add("show");
+                    }
+                });
+            }
+        });
+    </script>
+
 
 </body>
 
