@@ -18,9 +18,11 @@
         <a class="navbar-brand" href="#">My-Portfolio</a>
         
         <!-- Mobile Toggle Button (Bootstrap 5 Standard) -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <!-- FIXED: Notice the native 'onclick' attribute embedded directly into the HTML tag -->
+         <button class="navbar-toggler" type="button" onclick="document.getElementById('navbarNavDropdown').classList.toggle('show')" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+
 
         <!-- The Collapsible Menu Wrapper -->
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
