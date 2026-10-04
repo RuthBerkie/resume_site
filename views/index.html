@@ -13,49 +13,45 @@
          <script src="https://googleapis.com"></script>
       </head>
 <body>
-     <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav_left" style="background-color: #04031c !important;">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">My-Portfolio</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-          </button>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav_left" style="background-color: #04031c !important;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">My-Portfolio</a>
+        
+        <!-- Mobile Toggle Button (Bootstrap 5 Standard) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <div class="collapse navbar-collapse flex-d flex-row-reverse nav_right" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="https://github.com/RuthBerkie">|  Projects</a>
-              </li>
-    
-
-                  <!-- Certifications Dropdown Menu -->
-               <li class="nav-item dropdown">
-                 <a class="nav-link dropdown-toggle" href="#" id="certificationsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  |  Certifications
-                 </a>
-                 <div class="dropdown-menu" aria-labelledby="certificationsDropdown">
-                  <a class="dropdown-item" href="https://drive.google.com/file/d/1-uEMi-HyJF1SLomNggQ-84rRso5ofeEM/view?usp=sharing" target="_blank">ALX</a>
-                  <a class="dropdown-item" href="https://drive.google.com/file/d/1fXL4YDx2DgbKjaq4G7WB4WYgCcNq_9J_/view?usp=sharing" target="_blank">CNA</a>
-                 </div>
-                </li>
-  
-
-
-              <li class="nav-item active">
-                <a class="nav-link p-2" href="/sql">|  SQLi <span class="sr-only"></span></a>
-              </li>
-             
-              <li class="nav-item dropdown">
+        <!-- The Collapsible Menu Wrapper -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav align-items-center">
                 
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="/sql">SQLi</a></li>
-                  <li><a class="dropdown-item" href="https://github.com/RuthBerkie">|Projects</a></li>
-                  <li><a class="dropdown-item" href="#">Certifications</a></li>
-                </ul>
-              </li>
+                <!-- 1. Projects Link -->
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="https://github.com/RuthBerkie" target="_blank">Projects</a>
+                </li>
+
+                <!-- 2. SQLi Demo Link -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/sql">SQLi</a>
+                </li>
+                
+                <!-- 3. Certifications Dropdown (With its 2 Sub-Pages) -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="certificationsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Certifications
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="certificationsDropdown">
+                        <li><a class="dropdown-item" href="https://drive.google.com/file/d/1-uEMi-HyJF1SLomNggQ-84rRso5ofeEM/view?usp=sharing" target="_blank">ALX</a></li>
+                        <li><a class="dropdown-item" href="https://drive.google.com/file/d/1fXL4YDx2DgbKjaq4G7WB4WYgCcNq_9J_/view?usp=sharing" target="_blank">CNA</a></li>
+                    </ul>
+                </li>
+
             </ul>
-          </div>
         </div>
-      </nav>
+    </div>
+</nav>
+
       
 <sectionc class = "container">
 
