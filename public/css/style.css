@@ -313,3 +313,49 @@ footer {
   user-select: all; /* Allows traditional double-click highlight selections as back-ups */
   font-weight: 500;
 }
+
+
+/* ==========================================================================
+   CUSTOM MOBILE NAVIGATION MENU STYLES (Overrides Framework Conflicts)
+   ========================================================================== */
+
+/* This rule targeting small mobile screens under 992px wide */
+@media (max-width: 991.98px) {
+    
+    /* 1. Forces the menu to hide by default and show smoothly when toggled */
+    #navbarNavDropdown {
+        display: none !important;
+        width: 100% !important;
+        background-color: #04031c !important; /* Matches your navbar dark theme */
+        padding: 15px 20px !important;
+        border-radius: 8px !important;
+        margin-top: 10px !important;
+        box-shadow: 0px 4px 15px rgba(0, 225, 255, 0.2) !important; /* Adds a nice cyan glow */
+        border: 1px solid #00e1ff !important; /* Optional: adds a cyber neon outline border */
+    }
+
+    /* 2. When the toggle script appends the 'show' class, display the dropdown box vertically */
+    #navbarNavDropdown.show {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+
+    /* 3. Space out your mobile dropdown navigation links nicely for finger taps */
+    #navbarNavDropdown .nav-item {
+        width: 100% !important;
+        padding: 10px 0 !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important; /* Subtle dividing lines */
+    }
+    
+    #navbarNavDropdown .nav-item:last-child {
+        border-bottom: none !important; /* Removes line from the last item */
+    }
+
+    /* 4. Ensure your text alignment looks sleek inside the mobile dropdown card */
+    #navbarNavDropdown .nav-link {
+        font-size: 1.1rem !important;
+        color: #ffffff !important;
+        width: 100% !important;
+    }
+}
