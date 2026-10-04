@@ -1,0 +1,315 @@
+body, html{
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family:"Lato", sans-serif ;
+  font-weight: 400;
+  line-height: 1.8em;
+  color:#092d6aed;
+}
+
+
+.nav_left{
+  padding-left: 50px;
+}
+
+.nav_right{
+padding-right: 50px;
+}
+
+.navbar.nav_left {
+  padding-top: 0.1rem !important;  /* Reduces top spacing */
+  padding-bottom: 0.1rem !important; /* Reduces bottom spacing */
+  min-height: auto !important;       /* Prevents any minimum height restrictions */
+}
+
+.bg-purple {
+    background-color: #3b1e54 !important; /* Elegant dark purple color */
+}
+
+
+.pad_left{
+padding-left: 10px;
+}
+
+.pad_right{
+padding-right: 10px;
+}
+
+.pad_top{
+  margin-top: 50px;
+  align-items: center;
+}
+
+.top{
+  padding-top: 50px;
+}
+
+.center{
+  align-items: center;
+  text-align: center;
+  align-content: center;
+
+}
+
+.img{
+  padding-top: 60px;
+}
+
+.ptext {
+  font-family: "Arvo", "Roboto Serif", serif;
+  position: absolute;
+  text-align: center;
+  top: 60%;
+  width: 100%;
+  font-size: 50px;
+  letter-spacing: 3px;
+  color: #eae0f1;
+  padding-top: 45px;
+}
+
+.profile-subtitle {
+  font-family: "Arvo", "Roboto Serif", serif;
+  position: absolute;
+  text-align: center;
+  top: 60%;
+  width: 100%;
+  font-size: 35px;
+  letter-spacing: 3px;
+  color: #1a043bed;
+  padding-top: 50px;
+}
+
+.block {
+  height: 430px;
+  background-color: #010416;
+}
+
+.block2 {
+    padding: 50px 50px 60px 50px; /* Shorthand for Top, Right, Bottom, Left */
+    display: flex !important;
+    justify-content: center !important;
+    flex-wrap: wrap;
+}   
+.row2 {
+  padding-top: 50px;
+}
+
+.blue{
+  padding-top: 100px;
+  width: 100%;
+}
+
+.sizing{
+  font-size: 20px;
+}
+
+.me{
+  padding-right: 30px;
+}
+
+.to{
+  padding-left: 30px;
+}
+
+.top1{
+  padding-top: 130px;
+}
+
+.bottom{
+  padding-bottom: 60px;
+}
+
+footer {
+    background-color: transparent;
+    width: 100%;
+    color: rgb(4, 1, 26);
+    text-align: center;
+    
+    padding: 45px 0px 10px 0px; 
+    
+    margin-top: auto;
+    border-top: 3px solid #050117;
+}
+
+
+
+
+
+.botm{
+  padding-left: 10px;
+  padding-right: 10px
+}
+
+/* 1. Force the container row to align everything by the image baselines */
+.block2 {
+    display: flex !important;
+    align-items: flex-start !important; /* Forces the very top of each column to align perfectly */
+    justify-content: space-between !important;
+    
+}
+
+/* 2. Target the column content layout */
+.block2 .col-lg-4.center {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;     /* Centers everything horizontally */
+    text-align: space-between !important;
+}
+
+/* 3. Hard-lock the image boundaries to make unequal images completely uniform */
+.block2 .col-lg-4.center img.rounded-circle {
+    display: block !important;
+    width: 200px !important;            /* Forces identical widths */
+    height: 200px !important;           /* Forces identical heights */
+    object-fit: cover !important;       /* Keeps images from stretching or distorting */
+    margin: 0 auto !important;          /* Keeps them perfectly centered */
+}
+
+/* 4. Reset the custom headers so they share a single layout rule */
+.impg, .impg2, .impg3 {
+    padding-top: 20px !important;       /* Replaces all unequal top paddings with 20px */
+    margin: 0 0 10px 0 !important;      /* Removes extra margins throwing columns off */
+}
+
+.about-me-section {
+    background-color: transparent;
+    border-top: 3px solid #1a043bed; /* Your top thin line */
+    border-bottom: 1px solid #1a043bed; /* Optional: matches your bottom line */
+    
+    padding: 0px; 
+    display: flex;
+    align-items: stretch; 
+}
+
+.about-me-container {
+    width: 100%;
+    display: flex;
+    align-items: center; /* Keeps text centered vertically */
+}
+
+.about-me-image {
+    /* FIX 2: Forces the image container to fill the left side */
+    flex: 0 0 45%; 
+    height: 100%;
+}
+
+.about-me-image img {
+    width: 100%;
+    height: 100%;
+    /* FIX 3: Makes the image crop and fill its box perfectly without distortion */
+    object-fit: cover; 
+    display: block;
+    
+    /* REMOVE your old border-radius so it sits flat against the left corner edges */
+    border-radius: 0; 
+}
+
+.about-me-text {
+    /* FIX 4: Gives the text column the remaining space and adds breathing room */
+    flex: 1;
+    padding: 40px; 
+    color:#092d6aed;
+    text-align: left; /* Optional: left-aligned text often looks cleaner next to a flush image */
+}
+
+
+/* Responsiveness: Stacks layout vertically on mobile devices */
+@media (max-width: 768px) {
+    .about-me-container {
+        flex-direction: column;
+    }
+}
+
+
+
+/* 1. Keep the smooth transition active for all four elements */
+.block2 .col-lg-4.center img.rounded-circle,
+.block img {
+  box-shadow: 0 10px 25px rgba(65, 142, 213, 0.723) !important;
+  border-radius: 50% !important;
+  cursor: pointer;
+  
+  /* Adds a smooth animation transition when the mouse hovers over and leaves the image */
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important; 
+}
+
+/* 2. Group 1: The 3 Row Column Images get the BRIGHT BLUE glow */
+.block2 .col-lg-4.center img.rounded-circle:hover {
+    transform: scale(1.08) !important;
+    box-shadow: 0 10px 20px rgba(2, 183, 254, 0.96) !important; /* Bright Blue */
+    cursor: pointer;
+}
+
+.block img:hover {
+  transform: scale(1.08) !important;
+  
+  /* Optional: Makes the glow slightly brighter and deeper when hovering for extra realism */
+  box-shadow: 0 15px 35px rgba(85, 21, 237, 0.9) !important;
+}
+
+/* Custom styling for your dropdown items */
+.dropdown-menu .dropdown-item {
+  color: #1a1a2e; /* Sets the default text color of the links */
+  transition: background-color 0.2s ease, color 0.2s ease; /* Makes transitions smooth */
+}
+
+/* Changes background color on Hover and Active/Click states to Dark Purple */
+.dropdown-menu .dropdown-item:hover, 
+.dropdown-menu .dropdown-item:active,
+.dropdown-menu .dropdown-item:focus {
+  background-color: #0b032b !important; /* Custom dark purple color */
+  color: #ffffff !important;            /* Keeps the text white for contrast */
+}
+
+
+
+/* Update your profile image styling to prevent the borders from clipping */
+.rounded-circle.mx-auto.d-block.img {
+  border: 1.5px solid #8d75f7; 
+  padding: 40px;              
+  background-color: #040513; 
+  
+  /* FIXES THE CUT OFF: Adds vertical spacing so the absolute position container doesn't slice the borders */
+  margin-top: 0.1rem !important;
+  margin-bottom: 0.5rem !important;
+  
+  /* Keeps the image frame perfectly stable inside Bootstrap columns */
+  display: block;
+}
+
+/* Styling layout rules for your contact items */
+.contact-info {
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Spaces out the separator line symbol */
+.contact-info .divider {
+  margin: 0 10px;
+  color: #7d63f2;
+}
+
+/* Minimalist borderless interactive copy triggers */
+.btn-copy {
+  background: none;
+  border: none;
+  color: #7d63f2;
+  cursor: pointer;
+  padding: 0 4px;
+  margin-left: 2px;
+  transition: color 0.2s ease, transform 0.1s ease;
+}
+
+/* Glow pop animation on button hover states */
+.btn-copy:hover {
+  color: #a496f2;
+  transform: scale(1.15);
+}
+
+.copyable-text {
+  user-select: all; /* Allows traditional double-click highlight selections as back-ups */
+  font-weight: 500;
+}
