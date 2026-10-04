@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const bodyParser = require("body-parser");
 const exp = require("constants");
-const connection = require("C:\\Users\\hpeli\\Documents\\work\\Resume_site\\db");
+const connection = require("./db");
 
 const app = express();
 app.use(express.urlencoded({extended: false}))
