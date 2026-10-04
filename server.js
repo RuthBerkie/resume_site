@@ -65,11 +65,17 @@ app.post("/login", function(req, res){
 
 
 
-
-app.listen(PORT, function(){
-    console.log("Server is working on port " + PORT);
-    connection.connect(function(err){
-        if(err) throw err;
-        console.log("database is working")
-    })
+// Locate your listen block at the bottom and update it to this:
+app.listen(PORT, "0.0.0.0", function(){
+    console.log("Server is working live on port " + PORT);
+    
+    // Testing the database pool connection safely
+    connection.getConnection(function(err, poolConnection){
+        if(err) {
+            console.error("Database connection pool failed: " + err.message);
+            return;
+        }
+        console.log("Database connection pool is working cleanly!");
+        poolConnection.release(); // Safely release it back to the pool
+    });
 });
