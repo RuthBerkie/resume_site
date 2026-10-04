@@ -1,21 +1,18 @@
-// 1. Load the environment variables from your .env file
-require('dotenv').config(); 
-const mysql = require('mysql2'); // or 'mysql' depending on your package
+// 1. MUST BE LINE 1: Loads variables from your environment
+require('dotenv').config();
+const mysql = require('mysql2'); 
 
-// 2. Replace hardcoded strings with process.env variables
-const db = mysql.createConnection({
+// 2. Creates a robust connection pool for stable cloud hosting
+const db = mysql.createPool({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME
+    database: process.env.DB_NAME,
+    port: 3306, // Standard MySQL connection port
+    waitForConnections: true,
+    connectionLimit: 10,
+    queueLimit: 0
 });
 
-db.connect((err) => {
-    if (err) {
-        console.error("Database connection failed: ", err.stack);
-        return;
-    }
-    console.log("Database connected successfully using env variables!");
-});
-
+// 3. Export the module so server.js can read it cleanly
 module.exports = db;
