@@ -108,8 +108,8 @@ padding-right: 10px;
 }
 /* 1. Profile Image Formatting */
 .rounded-circle.img {
-    border: 1.5px solid #8d75f7;
-    padding: 15px;
+    border: 1.5px solid #9986eb;
+    padding: 30px;
     background-color: #040513;
     width: 250px; /* Explicit size layout constraint */
     height: 250px;
@@ -273,7 +273,7 @@ footer {
   transform: scale(1.08) !important;
   
   /* Optional: Makes the glow slightly brighter and deeper when hovering for extra realism */
-  box-shadow: 0 15px 35px rgba(85, 21, 237, 0.9) !important;
+  box-shadow: 0 15px 35px rgba(60, 10, 177, 0.9) !important;
 }
 
 /* Custom styling for your dropdown items */
@@ -293,7 +293,7 @@ footer {
 
 
 .rounded-circle.mx-auto.d-block.img {
-  border: 1.5px solid #8d75f7;
+  border: 1.5px solid #4521e8;
   padding: 40px; 
   background-color: #040513;
   margin-top: 0.1rem !important;
@@ -354,7 +354,7 @@ footer {
         border-radius: 8px !important;
         margin-top: 10px !important;
         box-shadow: 0px 4px 15px rgba(0, 225, 255, 0.2) !important;
-        border: 1px solid #00e1ff !important;
+        border: 1px solid #0edffa !important;
     }
 
     #navbarNavDropdown.show {
