@@ -56,37 +56,65 @@ padding-right: 10px;
   padding-top: 60px;
 }
 
-.ptext {
-  font-family: "Arvo", "Roboto Serif", serif;
-  position: absolute;
-  text-align: center;
-  top: 60%;
-  width: 100%;
-  font-size: 50px;
-  letter-spacing: 3px;
-  color: #eae0f1;
-  padding-top: 45px;
+.ptext-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
 }
 
+.profile-title {
+    font-family: "Arvo", "Roboto Serif", serif;
+    font-size: 45px;
+    letter-spacing: 2px;
+    color: #eae0f1;
+    margin: 0 0 10px 0;
+}
 .profile-subtitle {
-  font-family: "Arvo", "Roboto Serif", serif;
-  position: absolute;
-  text-align: center;
-  top: 60%;
-  width: 100%;
-  font-size: 35px;
-  letter-spacing: 3px;
-  color: #1a043bed;
-  padding-top: 50px;
+    font-family: "Arvo", "Roboto Serif", serif;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: #1a043bed;
+    margin: 0;
 }
 
-.block {
-  height: 430px;
-  background-color: #010416;
-  padding-top: 50px; /* Adjust this number until the white gap disappears */
-  box-sizing: border-box; /* Ensures the padding doesn't make the whole block taller than 430px */
+@media (max-width: 768px) {
+    .block {
+        flex-direction: column !important;
+        justify-content: center !important;
+        text-align: center !important;
+        height: auto !important;
+        padding: 40px 20px !important;
+    }
+    
+    .profile-image-wrapper {
+        margin-right: 0 !important;
+        margin-bottom: 25px !important;
+    }
+    
+    .ptext-wrapper {
+        align-items: center !important;
+        text-align: center !important;
+    }
+    
+    .profile-title {
+        font-size: 32px !important;
+    }
+    
+    .profile-subtitle {
+        font-size: 18px !important;
+    }
 }
-
+/* 1. Profile Image Formatting */
+.rounded-circle.img {
+    border: 1.5px solid #8d75f7;
+    padding: 15px;
+    background-color: #040513;
+    width: 250px; /* Explicit size layout constraint */
+    height: 250px;
+    object-fit: cover;
+}
 
 .block2 {
     padding: 50px 50px 60px 50px; /* Shorthand for Top, Right, Bottom, Left */
@@ -134,9 +162,6 @@ footer {
     margin-top: auto;
     border-top: 3px solid #050117;
 }
-
-
-
 
 
 .botm{

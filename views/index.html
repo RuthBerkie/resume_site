@@ -103,16 +103,24 @@
 
 
       
-<sectionc class = "container">
-
-        <div class="block">
-          <img class="rounded-circle mx-auto d-block img" src="/my,pic.jpg" alt="photo">
-          <div class="ptext">
-            <span>Ruth Berkie<br></span><br><br>
-            <p class="profile-subtitle">ELECTRICAL ENGINEER - CYBERSECURITY</p>        
-          </div>
+<!-- FIXED: Using flex alignment to automatically separate the image and text columns -->
+<section class="container">
+    <div class="block d-flex align-items-center justify-content-start px-4">
+        
+        <!-- Left Side: Profile Picture Container -->
+        <div class="profile-image-wrapper me-5">
+            <img class="rounded-circle img" src="/my,pic.jpg" alt="photo">
         </div>
-  </section>
+        
+        <!-- Right Side: Text Information Column -->
+        <div class="ptext-wrapper">
+            <h1 class="profile-title">Ruth Berkie</h1>
+            <p class="profile-subtitle">ELECTRICAL ENGINEER - CYBERSECURITY</p>
+        </div>
+
+    </div>
+</section>
+
 
 
 
