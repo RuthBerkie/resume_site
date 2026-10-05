@@ -254,7 +254,7 @@ footer {
 /* 1. Keep the smooth transition active for all four elements */
 .block2 .col-lg-4.center img.rounded-circle,
 .block img {
-  box-shadow: 0 10px 25px rgba(181, 161, 246, 0.982) !important;
+  box-shadow: 0 10px 25px rgba(150, 208, 249, 0.489) !important;
   border-radius: 50% !important;
   cursor: pointer;
   
