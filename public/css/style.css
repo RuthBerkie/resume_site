@@ -269,7 +269,7 @@ footer {
 
 .rounded-circle.mx-auto.d-block.img {
   border: 1.5px solid #8d75f7;
-  padding: 8px; /* Reduced from 40px to keep the border close to the photo */
+  padding: 40px; 
   background-color: #040513;
   margin-top: 0.1rem !important;
   margin-bottom: 0.5rem !important;
