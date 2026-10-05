@@ -83,7 +83,10 @@ padding-right: 10px;
 .block {
   height: 430px;
   background-color: #010416;
+  padding-top: 50px; /* Adjust this number until the white gap disappears */
+  box-sizing: border-box; /* Ensures the padding doesn't make the whole block taller than 430px */
 }
+
 
 .block2 {
     padding: 50px 50px 60px 50px; /* Shorthand for Top, Right, Bottom, Left */
