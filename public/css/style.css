@@ -267,19 +267,15 @@ footer {
 
 
 
-/* Update your profile image styling to prevent the borders from clipping */
 .rounded-circle.mx-auto.d-block.img {
-  border: 1.5px solid #8d75f7; 
-  padding: 40px;              
-  background-color: #040513; 
-  
-  /* FIXES THE CUT OFF: Adds vertical spacing so the absolute position container doesn't slice the borders */
+  border: 1.5px solid #8d75f7;
+  padding: 8px; /* Reduced from 40px to keep the border close to the photo */
+  background-color: #040513;
   margin-top: 0.1rem !important;
   margin-bottom: 0.5rem !important;
-  
-  /* Keeps the image frame perfectly stable inside Bootstrap columns */
   display: block;
 }
+
 
 /* Styling layout rules for your contact items */
 .contact-info {

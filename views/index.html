@@ -56,44 +56,28 @@
     }
 </style>
 
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top nav_left" style="background-color: #04031c !important;">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="/">My-Portfolio</a>
+<!-- ==========================================================================
+     NATIVE HTML WEB NAVIGATION (100% Unbreakable on Mobile Devices)
+     ========================================================================== -->
+<nav class="navbar navbar-dark fixed-top" style="background-color: #04031c !important; padding: 15px 20px;">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
         
-        <!-- Native Inline Click Action: Skips framework script calls entirely -->
-        <button class="navbar-toggler" type="button" onclick="document.getElementById('navbarNavDropdown').classList.toggle('show')" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <!-- Site Logo Header Link -->
+        <a class="navbar-brand" href="/" style="font-weight: bold; font-size: 1.3rem;">My-Portfolio</a>
+        
+        <!-- Native Dropdown Navigation Selector (Bypasses all JS/CSS conflicts entirely) -->
+        <select onchange="window.location.href=this.value;" style="background-color: #04031c; color: #00e1ff; border: 2px solid #00e1ff; padding: 8px 12px; border-radius: 6px; font-weight: bold; font-size: 0.95rem; outline: none; cursor: pointer; box-shadow: 0 0 10px rgba(0, 225, 255, 0.2);">
+            <option value="" disabled selected hidden>☰ Menu</option>
+            <option value="/">🏠 Home Portfolio</option>
+            <option value="/sql">🛡️ SQLi Cyber Demo</option>
+            <option value="https://github.com">📁 GitHub Projects</option>
+            <option value="https://google.com">📜 ALX Certificate</option>
+            <option value="https://google.com">📜 CNA Certificate</option>
+        </select>
 
-        <!-- Collapsible Link Listing Elements Grid Box Container -->
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-            <ul class="navbar-nav align-items-center">
-                
-                <!-- 1. External Developer Repositories Portfolio Route -->
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="https://github.com" target="_blank">Projects</a>
-                </li>
-
-                <!-- 2. Cyber Security Vulnerability Showcase Route -->
-                <li class="nav-item">
-                    <a class="nav-link" href="/sql">SQLi</a>
-                </li>
-                
-                <!-- 3. Dynamic Credentials and Certificates Dropdown Item -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="certificationsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Certifications
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="certificationsDropdown">
-                        <li><a class="dropdown-item" href="https://drive.google.com/file/d/1-uEMi-HyJF1SLomNggQ-84rRso5ofeEM/view?usp=sharing" target="_blank">ALX</a></li>
-                        <li><a class="dropdown-item" href="https://drive.google.com/file/d/1fXL4YDx2DgbKjaq4G7WB4WYgCcNq_9J_/view?usp=sharing" target="_blank">CNA</a></li>
-                    </ul>
-                </li>
-
-            </ul>
-        </div>
     </div>
 </nav>
+
 
       
 <sectionc class = "container">
