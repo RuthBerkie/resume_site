@@ -303,40 +303,39 @@ footer {
 
 
 /* Styling layout rules for your contact items */
+/* ==========================================================================
+   CONTACT SECTION SINGLE-LINE ALIGNMENT STYLES
+   ========================================================================== */
+
 .contact-info {
-  font-size: 0.95rem;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+    font-size: 15px !important;
+    white-space: nowrap !important; /* Force browser to block line breaks completely */
+    overflow-x: auto; /* Adds clean swiping if viewed on tiny screens */
 }
 
-/* Spaces out the separator line symbol */
-.contact-info .divider {
-  margin: 0 10px;
-  color: #7d63f2;
-}
-
-/* Minimalist borderless interactive copy triggers */
+/* Style your copy icons cleanly so they look compact and professional */
 .btn-copy {
-  background: none;
-  border: none;
-  color: #7d63f2;
-  cursor: pointer;
-  padding: 0 4px;
-  margin-left: 2px;
-  transition: color 0.2s ease, transform 0.1s ease;
+    background: none !important;
+    border: none !important;
+    color: #8d75f7 !important; /* Matches your beautiful profile purple theme tone */
+    cursor: pointer !important;
+    padding: 0 4px !important;
+    margin-right: 5px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    transition: color 0.2s ease !important;
 }
 
-/* Glow pop animation on button hover states */
 .btn-copy:hover {
-  color: #a496f2;
-  transform: scale(1.15);
+    color: #00e1ff !important; /* Switches to custom cyber neon blue on mouse over! */
 }
 
-.copyable-text {
-  user-select: all; /* Allows traditional double-click highlight selections as back-ups */
-  font-weight: 500;
+/* Formatting spacer dividers */
+.divider {
+    color: rgba(255, 255, 255, 0.3) !important;
+    margin: 0 5px !important;
 }
+
 
 
 /* ==========================================================================

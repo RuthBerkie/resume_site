@@ -186,21 +186,24 @@
           I have and gain new ones as progress, I can work independently and in teams as needed.
         </p>
         
-        <!-- FIXED: Removed the nested layout and added interactive copy hooks -->
-        <p class="contact-info mt-3">
-          Email: <span class="copyable-text" id="emailText">ruthberkie2@gmail.com</span> 
-          <button class="btn-copy" onclick="copyToClipboard('emailText', this)"><i class="far fa-copy"></i></button>
-          
-          <span class="divider">|</span> 
-          
-          Telegram: <span class="copyable-text" id="telegramText">@Ruth_Berkie</span> 
-          <button class="btn-copy" onclick="copyToClipboard('telegramText', this)"><i class="far fa-copy"></i></button>
+        <!-- FIXED: Converted to a flex row that aligns everything in a single straight row line -->
+   <div class="contact-info d-flex flex-row flex-nowrap align-items-center gap-3 mt-3">
+    
+    Email: <span class="copyable-text" id="emailText">ruthberkie2@gmail.com</span>
+    <button class="btn-copy" onclick="copyToClipboard('emailText', this)"><i class="far fa-copy"></i></button>
 
-          <span class="divider">|</span> 
-          
-          Phone: <span class="copyable-text" id="phoneNumber">+251969761606</span> 
-          <button class="btn-copy" onclick="copyToClipboard('phoneNumber', this)"><i class="far fa-copy"></i></button>
-        </p>
+    <span class="divider">|</span>
+
+    Telegram: <span class="copyable-text" id="telegramText">@Ruth_Berkie</span>
+    <button class="btn-copy" onclick="copyToClipboard('telegramText', this)"><i class="far fa-copy"></i></button>
+
+    <span class="divider">|</span>
+
+    Phone: <span class="copyable-text" id="phoneNumber">+251969761606</span>
+    <button class="btn-copy" onclick="copyToClipboard('phoneNumber', this)"><i class="far fa-copy"></i></button>
+    
+    </div>
+
     </div>
 </section>
 
