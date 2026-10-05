@@ -119,16 +119,11 @@
             
             <!-- Your Name Title -->
             <h1 style="font-family: 'Arvo', 'Roboto Serif', serif !important; font-size: 52px !important; font-weight: bold !important; letter-spacing: 2px !important; color: #eae0f1 !important; margin: 0 0 15px 0 !important; line-height: 1.1 !important; position: relative !important;">
-                Hello!,
+                Hello!
             </h1>
 
-             <p style="font-family: 'Arvo', 'Roboto Serif', serif !important; font-size: 22px !important; font-weight: 500 !important; letter-spacing: 1px !important; color: #8d75f7 !important; margin: 0 !important; line-height: 1.3 !important; position: relative !important;">
-                I'm Ruth Berkie
-            </p>
-            
-            <!-- Your Engineering Subtitle -->
-            <p style="font-family: 'Arvo', 'Roboto Serif', serif !important; font-size: 22px !important; font-weight: 500 !important; letter-spacing: 1px !important; color: #8d75f7 !important; margin: 0 !important; line-height: 1.3 !important; position: relative !important;">
-                ELECTRICAL ENGINEER - CYBERSECURITY
+             <p style="font-family: 'Arvo', 'Roboto Serif', serif !important; font-size: 22px !important; font-weight: 500 !important; letter-spacing: 1px !important; color: #7868c2 !important; margin: 0 !important; line-height: 1.3 !important; position: relative !important;">
+                I'm Ruth Berkie, graduated from AASTU(Addis Ababa Science and Technology University) with an Electrical and Computer Engineering degree(Computer stream) now exploring the field of Cybersecurity
             </p>
             
         </div>
@@ -186,24 +181,21 @@
           I have and gain new ones as progress, I can work independently and in teams as needed.
         </p>
         
-        <!-- FIXED: Converted to a flex row that aligns everything in a single straight row line -->
-   <div class="contact-info d-flex flex-row flex-nowrap align-items-center gap-3 mt-3">
-    
-    Email: <span class="copyable-text" id="emailText">ruthberkie2@gmail.com</span>
-    <button class="btn-copy" onclick="copyToClipboard('emailText', this)"><i class="far fa-copy"></i></button>
+        <!-- FIXED: Removed the nested layout and added interactive copy hooks -->
+        <p class="contact-info mt-3">
+          Email: <span class="copyable-text" id="emailText">ruthberkie2@gmail.com</span> 
+          <button class="btn-copy" onclick="copyToClipboard('emailText', this)"><i class="far fa-copy"></i></button>
+          
+          <span class="divider">|</span> 
+          
+          Telegram: <span class="copyable-text" id="telegramText">@Ruth_Berkie</span> 
+          <button class="btn-copy" onclick="copyToClipboard('telegramText', this)"><i class="far fa-copy"></i></button>
 
-    <span class="divider">|</span>
-
-    Telegram: <span class="copyable-text" id="telegramText">@Ruth_Berkie</span>
-    <button class="btn-copy" onclick="copyToClipboard('telegramText', this)"><i class="far fa-copy"></i></button>
-
-    <span class="divider">|</span>
-
-    Phone: <span class="copyable-text" id="phoneNumber">+251969761606</span>
-    <button class="btn-copy" onclick="copyToClipboard('phoneNumber', this)"><i class="far fa-copy"></i></button>
-    
-    </div>
-
+          <span class="divider">|</span> 
+          
+          Phone: <span class="copyable-text" id="phoneNumber">+251969761606</span> 
+          <button class="btn-copy" onclick="copyToClipboard('phoneNumber', this)"><i class="far fa-copy"></i></button>
+        </p>
     </div>
 </section>
 
