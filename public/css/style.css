@@ -254,7 +254,7 @@ footer {
 /* 1. Keep the smooth transition active for all four elements */
 .block2 .col-lg-4.center img.rounded-circle,
 .block img {
-  box-shadow: 0 10px 25px rgba(65, 142, 213, 0.723) !important;
+  box-shadow: 0 10px 25px rgba(113, 189, 243, 0.864) !important;
   border-radius: 50% !important;
   cursor: pointer;
   
@@ -265,7 +265,7 @@ footer {
 /* 2. Group 1: The 3 Row Column Images get the BRIGHT BLUE glow */
 .block2 .col-lg-4.center img.rounded-circle:hover {
     transform: scale(1.08) !important;
-    box-shadow: 0 10px 20px rgba(2, 183, 254, 0.96) !important; /* Bright Blue */
+    box-shadow: 0 10px 20px rgba(2, 194, 247, 0.96) !important; /* Bright Blue */
     cursor: pointer;
 }
 
@@ -273,7 +273,7 @@ footer {
   transform: scale(1.08) !important;
   
   /* Optional: Makes the glow slightly brighter and deeper when hovering for extra realism */
-  box-shadow: 0 15px 35px rgba(60, 10, 177, 0.9) !important;
+  box-shadow: 0 15px 35px rgba(34, 1, 111, 0.9) !important;
 }
 
 /* Custom styling for your dropdown items */
