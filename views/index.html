@@ -102,28 +102,26 @@
 
 
 
-<!-- ==========================================================================
-     SIDE-BY-SIDE PROFILE BLOCK (Bypasses external CSS overrides completely)
-     ========================================================================== -->
-<!-- FIXED: Forcing the top margin and padding to 0 pulls the block directly up against your navbar -->
+<!-- FIXED: Optimized spacing layout to spread text horizontally and nudge picture left -->
 <section class="container-fluid" style="margin-top: 0 !important; padding-top: 0 !important; padding-left: 0 !important; padding-right: 0 !important;">
-    <div class="block d-flex flex-row align-items-center justify-content-center flex-wrap px-4" style="height: auto !important; min-height: 450px !important; background-color: #010416 !important; gap: 40px !important; position: relative !important; margin-top: 0 !important;">
+    <div class="block d-flex flex-row align-items-center justify-content-start flex-wrap px-4" style="height: auto !important; min-height: 480px !important; background-color: #010416 !important; gap: 50px !important; position: relative !important; padding-top: 80px !important; padding-bottom: 40px !important;">
         
-        <!-- Left Column: Profile Image Container -->
-        <div style="position: relative !important; width: auto !important; height: auto !important;">
+        <!-- Left Side: Profile Image (Nudged left using a responsive margin-left offset style) -->
+        <div style="position: relative !important; width: auto !important; height: auto !important; margin-left: 40px !important;">
             <img class="rounded-circle img" src="/my,pic.jpg" alt="photo" style="width: 260px !important; height: 260px !important; object-fit: cover !important; display: block !important; position: relative !important; margin: 0 !important;">
         </div>
         
-        <!-- Right Column: Text Information (Titles & Subtitles) -->
-        <div style="display: flex !important; flex-direction: column !important; justify-content: center !important; align-items: flex-start !important; text-align: left !important; position: relative !important; width: auto !important; height: auto !important; max-width: 500px !important;">
+        <!-- Right Side: Text Information (Expanded layout constraints to let text run longer horizontally) -->
+        <div style="display: flex !important; flex-direction: column !important; justify-content: center !important; align-items: flex-start !important; text-align: left !important; position: relative !important; height: auto !important; flex: 1 !important; max-width: 60% !important; padding-right: 40px !important;">
             
-            <!-- Your Name Title -->
-            <h1 style="font-family: 'Arvo', 'Roboto Serif', serif !important; font-size: 52px !important; font-weight: bold !important; letter-spacing: 2px !important; color: #eae0f1 !important; margin: 0 0 15px 0 !important; line-height: 1.1 !important; position: relative !important;">
-                Hello!
+            <!-- Hello Header -->
+            <h1 style="font-family: 'Arvo', 'Roboto Serif', serif !important; font-size: 52px !important; font-weight: bold !important; letter-spacing: 2px !important; color: #eae0f1 !important; margin: 0 0 15px 0 !important; line-height: 1.1 !important;">
+                Hello World!
             </h1>
-
-             <p style="font-family: 'Arvo', 'Roboto Serif', serif !important; font-size: 22px !important; font-weight: 500 !important; letter-spacing: 1px !important; color: #7868c2 !important; margin: 0 !important; line-height: 1.7 !important; position: relative !important;">
-                I'm Ruth Berkie, graduated from AASTU(Addis Ababa Science and Technology University) with an Electrical and Computer Engineering degree(Computer stream) now exploring the field of Cybersecurity
+            
+            <!-- Bio Paragraph Text (Width properties set to stretch cleanly across the container block) -->
+            <p style="font-family: 'Arvo', 'Roboto Serif', serif !important; font-size: 19px !important; font-weight: normal !important; letter-spacing: 0.5px !important; color: #a49fc6 !important; margin: 0 !important; line-height: 1.6 !important; width: 100% !important;">
+                I'm Ruth Berkie, graduated from AASTU (Addis Ababa Science and Technology University) with an Electrical and Computer Engineering degree (Computer stream) now exploring the field of Cybersecurity.
             </p>
             
         </div>
